@@ -2,6 +2,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0px 10px;
 }
 
 h1 {
@@ -12,17 +13,32 @@ nav ul li{
     display: inline-block;
 }
 
+a {
+    text-decoration: none;
+}
+
 #works {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    /* justify-content:left; */
+    align-content: flex-start;
 }
 
 .card {
-    flex: 1 0 25%;
+    flex: 2 0 0;
 }
 
 .card img {
-    width: 33%;
-    min-width: 350px;
+    width: 40%;
+    min-width: 300px;
+    max-width: fit-content;
+    padding: 10px 10px 5px 10px;
+}
+
+@media screen  and (min-width: 500px) {
+    .card img {
+        min-width: 600px;
+    }
+}
+    
 }
