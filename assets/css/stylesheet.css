@@ -14,10 +14,15 @@ nav ul li{
 
 #works {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .card {
-    flex: 1 0 100px;
+    flex-basis: 50%;
+    margin: 8px;
+}
+
+.card img {
+    width: 40%;
 }
