@@ -2,11 +2,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 10px;
+    font-size: 20px;
+    background-color: black;
 }
 
 h1 {
-
+    font-size: 20px;
+    /* padding: 10px; */
+    color: white;
 }
 
 nav ul li{
@@ -15,6 +18,13 @@ nav ul li{
 
 a {
     text-decoration: none;
+    /* padding: 10px; */
+    color: white;
+}
+
+.home {
+    background-color: rgb(14, 94, 97);
+    color: white;
 }
 
 #works {
