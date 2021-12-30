@@ -35,6 +35,8 @@ a {
 
 .card1 img {
     width: 50%;
+    height: 400px;
+    object-fit: cover;
     min-width: 1180px;
     padding: 10px 10px 5px 10px;
 }
@@ -45,6 +47,8 @@ a {
 
 .card2 img {
     width: 25%;
+    height: 300px;
+    object-fit: cover;
     min-width: 580px;
     padding: 10px 10px 5px 10px;
 }
