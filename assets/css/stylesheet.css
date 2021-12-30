@@ -19,10 +19,10 @@ nav ul li{
 }
 
 .card {
-    flex-basis: 50%;
-    margin: 8px;
+    flex: 1 0 25%;
 }
 
 .card img {
-    width: 40%;
+    width: 33%;
+    min-width: 350px;
 }
