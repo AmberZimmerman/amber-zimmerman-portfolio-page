@@ -44,7 +44,7 @@ a {
 
 .works-header {
     text-align: center;
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 26px;
     background-color: cadetblue;
 }
@@ -52,38 +52,43 @@ a {
 .works-portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "long-card long-card"
-        "works-card1 works-card2"
-        "works-card3 works-card4"
+        "works-card2 works-card2"
+        "works-card3 works-card3"
+        "works-card4 works-card4"
+        "works-card5 works-card5";
 }
 
 .long-card {
     grid-area: long-card;
-    display: grid;
-}
-
-.works-card1 {
-    grid-area: works-card1;
-    display: grid;
-    background-color: red;
-    gap: 10px;
+    height: auto;
+    position: relative;
 }
 
 .works-card2 {
-    grid-area: works-card2;
-    display: grid;
+    grid-area: works-card1;
+    height: auto;
+    position: relative;
 }
 
 .works-card3 {
-    grid-area: works-card3;
-    display: grid;
+    grid-area: works-card2;
+    height: auto;
+    position: relative;
 }
 
 .works-card4 {
+    grid-area: works-card3;
+    height: auto;
+    position: relative;
+}
+
+.works-card5 {
     grid-area: works-card4;
-    display: grid;
+    height: auto;
+    position: relative;
 }
 
 .works-title {
@@ -91,6 +96,12 @@ a {
     font-size: 20px;
     text-align: center;
     padding: 10px;
+    position: absolute;
+    height: fit-content;
+    width:fit-content;
+    left: 10px;
+    right: 4px;
+    bottom: 10px;
 }
 
 .long-img {
@@ -108,6 +119,20 @@ a {
 }
 
 
+@media screen and (min-width: 736px)
+   {
+    .works-portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "long-card long-card"
+            "works-card1 works-card2"
+            "works-card3 works-card4";
+        padding: 0px 70px;
+    }
+
+   } 
 
 
 
