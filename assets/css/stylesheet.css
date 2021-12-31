@@ -1,6 +1,5 @@
 .hero {
     display: flex;
-    /* justify-content: space-between; */
 } 
 
 .left-hero {
@@ -49,6 +48,7 @@ a {
     background-color: cadetblue;
 }
 
+/* Main styling is for mobile viewing */
 .works-portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,25 +100,25 @@ a {
     height: fit-content;
     width:fit-content;
     left: 10px;
-    right: 4px;
-    bottom: 10px;
+    right: 0;
+    bottom: 20px;
 }
 
 .long-img {
-    height: 375px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
     display: block;
 }
 
 .portfolio-img {
-    max-height: 200px;
+    max-height: 150px;
     width: 100%;
     object-fit: cover;
     display: block;
 }
 
-
+/* This is for desktop viewing */
 @media screen and (min-width: 736px)
    {
     .works-portfolio {
@@ -129,7 +129,7 @@ a {
             "long-card long-card"
             "works-card1 works-card2"
             "works-card3 works-card4";
-        padding: 0px 70px;
+        padding: 20px 200px;
     }
 
    } 
