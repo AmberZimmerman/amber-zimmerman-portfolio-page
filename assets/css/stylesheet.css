@@ -42,26 +42,68 @@ a {
     color: white;
 }
 
-.home {
-    background-color: rgb(14, 94, 97);
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
+.works-header {
+    text-align: center;
+    padding: 10px;
+    font-size: 26px;
+    background-color: cadetblue;
 }
 
-#works {
-    display: flex;
-    flex-flow: row wrap;
-    /* justify-content:left; */
-    align-content: flex-start;
+.works-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+
+.works-card {
+    background-color: red;
+    flex: 1 0 50%;
+}
+
+.works-title {
+    background-color: cornsilk;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.long-card {
+    flex: 1 0 100%;
+}
+
+.long-img {
+    height: 375px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-img {
+    max-height: 325px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+
+
+
+/* #works {
+    display: flex;
+    flex-flow: row wrap; */
+    /* justify-content:left; */
+    /* align-content: flex-start;
+} */
 
 /* .wrapper {
     margin: 0 auto;
     width: 1200px;
 } */
 
-.card1 {
+/* .card1 {
     flex-grow: 1;
     flex-shrink: 0;
 }
@@ -84,7 +126,7 @@ a {
     object-fit: cover;
     min-width: 580px;
     padding: 10px 10px 5px 10px;
-}
+} */
 
 /* @media screen  and (max-width: 500px) {
     .card1 img, 
