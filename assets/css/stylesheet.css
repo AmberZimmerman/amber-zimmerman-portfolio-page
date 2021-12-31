@@ -22,8 +22,8 @@ h1 {
     flex-flow: column;
 }
 
-.portfolio-img {
-    /* object-fit: contain; */
+.photo-of-self {
+    display: block;
     height: auto;
     width: 100%;
 }
@@ -52,12 +52,38 @@ a {
 .works-portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "long-card long-card"
+        "works-card1 works-card2"
+        "works-card3 works-card4"
 }
 
-.works-card {
+.long-card {
+    grid-area: long-card;
+    display: grid;
+}
+
+.works-card1 {
+    grid-area: works-card1;
+    display: grid;
     background-color: red;
-    flex: 1 0 50%;
+    gap: 10px;
+}
+
+.works-card2 {
+    grid-area: works-card2;
+    display: grid;
+}
+
+.works-card3 {
+    grid-area: works-card3;
+    display: grid;
+}
+
+.works-card4 {
+    grid-area: works-card4;
+    display: grid;
 }
 
 .works-title {
@@ -65,10 +91,6 @@ a {
     font-size: 20px;
     text-align: center;
     padding: 10px;
-}
-
-.long-card {
-    flex: 1 0 100%;
 }
 
 .long-img {
@@ -79,7 +101,7 @@ a {
 }
 
 .portfolio-img {
-    max-height: 325px;
+    max-height: 200px;
     width: 100%;
     object-fit: cover;
     display: block;
