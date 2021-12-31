@@ -1,29 +1,31 @@
 .hero {
     display: flex;
-    /* flex-wrap: wrap;
-    justify-content: space-between; */
-    width: 1vh;
+    /* justify-content: space-between; */
 } 
 
 .left-hero {
     background-color: black;
-    /* flex: 1 0 40%; */
+    flex: 1 0 40%;
 }
 
 h1 {
     font-size: 20px;
-    padding: 10px;
     color: white;
     text-align: center;
 }
 
 .right-hero {
     background-color: burlywood;
-    /* flex: 1 0 60%; */
+    flex: 1 0 60%;
+    height: auto;
+    width: 100%;
+    flex-flow: column;
 }
 
 .portfolio-img {
-    object-fit: contain;
+    /* object-fit: contain; */
+    height: auto;
+    width: 100%;
 }
 
 nav {
@@ -47,8 +49,6 @@ a {
     flex-wrap: wrap;
 }
 
-
-
 #works {
     display: flex;
     flex-flow: row wrap;
@@ -56,13 +56,14 @@ a {
     align-content: flex-start;
 }
 
-.wrapper {
+/* .wrapper {
     margin: 0 auto;
     width: 1200px;
-}
+} */
 
 .card1 {
-    flex: 1 0 0;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .card1 img {
@@ -85,8 +86,11 @@ a {
     padding: 10px 10px 5px 10px;
 }
 
-/* @media screen  and (min-width: 500px) {
-    .card img {
+/* @media screen  and (max-width: 500px) {
+    .card1 img, 
+    .hero,
+    .left-hero,
+    .right-hero {
         min-width: 600px;
     }
 } */
