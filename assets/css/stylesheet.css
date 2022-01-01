@@ -152,24 +152,28 @@ a {
     grid-area: works-card2;
     height: auto;
     position: relative;
+    padding: 0;
 }
 
 .works-card3 {
     grid-area: works-card3;
     height: auto;
     position: relative;
+    padding: 0;
 }
 
 .works-card4 {
     grid-area: works-card4;
     height: auto;
     position: relative;
+    padding: 0;
 }
 
 .works-card5 {
     grid-area: works-card5;
     height: auto;
     position: relative;
+    padding: 0;
 }
 
 .works-title {
@@ -202,6 +206,56 @@ a {
     box-sizing: border-box;
     padding: 10px 5px 0px 5px;
 }
+
+.contact {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.contact-left {
+    background-color: black;
+    flex: 1 0 30%;
+    height: fit-content;
+}
+
+.contact-header {
+    padding: 20px 5px;
+    font-size: 30px;
+    color: white;
+    background-color: darksalmon;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-right {
+    flex: 1 0 70%;
+}
+
+.contact-links {
+    background-color: rgb(5, 51, 53);
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 5px;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    font-weight: 600;
+}
+
+
 
 /* This is for desktop viewing */
 @media screen and (min-width: 900px)
