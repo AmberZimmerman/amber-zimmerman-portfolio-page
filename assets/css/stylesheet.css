@@ -1,5 +1,10 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 .hero {
     display: flex;
+    position: relative;
 } 
 
 .left-hero {
@@ -11,7 +16,34 @@ h1 {
     font-size: 30px;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.my-name-is {
+    color:white;
+    font-size: 30px;
+    font-weight:900;
+    position: absolute;
+    
+}
+
+.amber-zimmerman {
+    color: white;
+    background-color: darkorchid;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+}
+
+.highlight {
+    color: black;
+    background-color: yellow;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
 }
 
 .right-hero {
@@ -30,7 +62,6 @@ h1 {
 
 nav {
     text-align: center;
-    padding: 20px;
 }
 
 nav ul li{
@@ -40,8 +71,8 @@ nav ul li{
 
 a {
     text-decoration: none;
-    padding: 10px;
     color: white;
+    padding: 7px;
 }
 
 .about {
