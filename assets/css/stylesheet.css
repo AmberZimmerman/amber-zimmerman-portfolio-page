@@ -200,7 +200,7 @@ a {
 }
 
 /* This is for desktop viewing */
-@media screen and (min-width: 736px)
+@media screen and (min-width: 900px)
    {
     .works-portfolio {
         display: grid;
@@ -212,8 +212,28 @@ a {
             "works-card4 works-card5";
         padding: 20px 150px;
     }
+} 
 
-   } 
+@media screen and (max-width: 1155px)
+    {
+.overlappy-text {
+    position: static;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+} 
+
+.highlight {
+    display: inline-block;
+}
+    }
+
 
 
 
