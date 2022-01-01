@@ -83,28 +83,30 @@ a {
     background-color: darkkhaki;
     display: flex;
     flex-wrap: wrap;
-    min-height: 300px;
+    min-height: 500px;
 }
 
 .left-about {
-    flex: 1 0 57%;
+    flex: 1 0 50%;
     position: relative;
+    background-color: darksalmon;
 }
 
 .small-photo-about {
     display: block;
-    height: 250px;
-    width: 230px;
+    height: 400px;
+    width: auto;
     object-fit: cover;
     box-sizing: border-box;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
+    box-shadow: -30px -30px teal;
 }
 
 .right-about {
-    flex: 1 0 43%
+    flex: 1 0 50%
 }
 
 .about-header {
@@ -115,6 +117,7 @@ a {
 .about-bio {
     display: block;
     padding: 30px;
+    font-size: 20px;
 }
 
 
@@ -214,6 +217,7 @@ a {
     }
 } 
 
+/* This is for smaller screen viewing */
 @media screen and (max-width: 1155px)
     {
 .overlappy-text {
@@ -234,53 +238,22 @@ a {
 }
     }
 
+@media screen and (max-width: 900)
+    {
+        .about {
+            display: flex;
+            position: relative;
+            flex-flow: column wrap;
+        }
 
-
-
-
-
-/* #works {
-    display: flex;
-    flex-flow: row wrap; */
-    /* justify-content:left; */
-    /* align-content: flex-start;
-} */
-
-/* .wrapper {
-    margin: 0 auto;
-    width: 1200px;
-} */
-
-/* .card1 {
-    flex-grow: 1;
-    flex-shrink: 0;
-}
-
-.card1 img {
-    width: 50%;
-    height: 400px;
-    object-fit: cover;
-    min-width: 1180px;
-    padding: 10px 10px 5px 10px;
-}
-
-.card2 {
-    flex: 1 0 0;
-}
-
-.card2 img {
-    width: 25%;
-    height: 300px;
-    object-fit: cover;
-    min-width: 580px;
-    padding: 10px 10px 5px 10px;
-} */
-
-/* @media screen  and (max-width: 500px) {
-    .card1 img, 
-    .hero,
-    .left-hero,
-    .right-hero {
-        min-width: 600px;
+    /* Not sure why this doesn't make it disappear */
+        .left-about {
+            display: none;
+            position: static;
+            background-color: darksalmon;
+        }
     }
-} */
+
+
+
+
