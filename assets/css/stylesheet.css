@@ -145,6 +145,7 @@ a {
     grid-area: long-card;
     height: auto;
     position: relative;
+    padding: 0;
 }
 
 .works-card2 {
@@ -172,7 +173,7 @@ a {
 }
 
 .works-title {
-    background-color: cornsilk;
+    background-color: rgb(250, 165, 37);
     font-size: 20px;
     text-align: center;
     padding: 10px;
