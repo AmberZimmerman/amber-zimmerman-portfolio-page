@@ -41,6 +41,34 @@ a {
     color: white;
 }
 
+.about {
+    background-color: darkkhaki;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-about {
+    flex: 1 0 40%;
+}
+
+.small-photo-about {
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.right-about {
+    flex: 1 0 60%
+}
+
+.about-bio {
+    display: block;
+    padding: 10px;
+}
+
+
 .works-header {
     text-align: center;
     padding: 10px 0px;
@@ -52,7 +80,7 @@ a {
 .works-portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
         "long-card long-card"
         "works-card2 works-card2"
@@ -68,25 +96,25 @@ a {
 }
 
 .works-card2 {
-    grid-area: works-card1;
-    height: auto;
-    position: relative;
-}
-
-.works-card3 {
     grid-area: works-card2;
     height: auto;
     position: relative;
 }
 
-.works-card4 {
+.works-card3 {
     grid-area: works-card3;
     height: auto;
     position: relative;
 }
 
-.works-card5 {
+.works-card4 {
     grid-area: works-card4;
+    height: auto;
+    position: relative;
+}
+
+.works-card5 {
+    grid-area: works-card5;
     height: auto;
     position: relative;
 }
@@ -116,6 +144,8 @@ a {
     width: 100%;
     object-fit: cover;
     display: block;
+    box-sizing: border-box;
+    padding: 10px 5px 0px 5px;
 }
 
 /* This is for desktop viewing */
@@ -127,9 +157,9 @@ a {
         grid-template-rows: 1fr;
         grid-template-areas:
             "long-card long-card"
-            "works-card1 works-card2"
-            "works-card3 works-card4";
-        padding: 20px 200px;
+            "works-card2 works-card3"
+            "works-card4 works-card5";
+        padding: 20px 150px;
     }
 
    } 
