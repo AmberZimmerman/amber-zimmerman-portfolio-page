@@ -4,18 +4,19 @@
 
 .left-hero {
     background-color: black;
-    flex: 1 0 40%;
+    flex: 1 0 35%;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     text-align: center;
+    padding: 20px;
 }
 
 .right-hero {
-    background-color: burlywood;
-    flex: 1 0 60%;
+    background-color: cadetblue;
+    flex: 1 0 65%;
     height: auto;
     width: 100%;
     flex-flow: column;
@@ -29,10 +30,12 @@ h1 {
 
 nav {
     text-align: center;
+    padding: 20px;
 }
 
 nav ul li{
     display: inline-block;
+    font-size: 20px;
 }
 
 a {
@@ -45,27 +48,38 @@ a {
     background-color: darkkhaki;
     display: flex;
     flex-wrap: wrap;
+    min-height: 300px;
 }
 
 .left-about {
-    flex: 1 0 40%;
+    flex: 1 0 57%;
+    position: relative;
 }
 
 .small-photo-about {
     display: block;
-    height: auto;
-    width: 100%;
-    padding: 10px;
+    height: 250px;
+    width: 230px;
+    object-fit: cover;
     box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .right-about {
-    flex: 1 0 60%
+    flex: 1 0 43%
+}
+
+.about-header {
+    display: block;
+    padding: 30px;
 }
 
 .about-bio {
     display: block;
-    padding: 10px;
+    padding: 30px;
 }
 
 
@@ -137,6 +151,8 @@ a {
     width: 100%;
     object-fit: cover;
     display: block;
+    box-sizing: border-box;
+    padding: 0px 5px;
 }
 
 .portfolio-img {
