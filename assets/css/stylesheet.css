@@ -80,16 +80,15 @@ a {
 }
 
 .about {
-    background-color: darkkhaki;
     display: flex;
     flex-wrap: wrap;
     min-height: 500px;
 }
 
 .left-about {
-    flex: 1 0 50%;
+    flex: 1 0 45%;
     position: relative;
-    background-color: darksalmon;
+    background-color: white;
 }
 
 .small-photo-about {
@@ -99,33 +98,60 @@ a {
     object-fit: cover;
     box-sizing: border-box;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 60%;
     transform: translate(-50%, -50%);
-    box-shadow: -30px -30px teal;
+    box-shadow: -30px -30px rgb(5, 51, 53);
 }
 
 .right-about {
-    flex: 1 0 50%
+    flex: 1 0 55%;
 }
 
 .about-header {
     display: block;
-    padding: 30px;
+    padding: 40px 0 0 0;
+    width: 50%;
+    text-align: end;
+}
+
+.about-header-lowercase {
+    font-size: 25px;
+    padding: 0;
+    box-shadow: 150px 60px orange;
+}
+
+.about-header-uppercase {
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .about-bio {
     display: block;
-    padding: 30px;
+    padding: 0 50px;
     font-size: 20px;
 }
 
+/* a red arrow shows up if I don't add the works class? */
+.works {
+    display: block;
+}
 
 .works-header {
     text-align: center;
-    padding: 10px 0px;
-    font-size: 26px;
+    padding: 50px 0px 20px 0;
     background-color: cadetblue;
+    color: white;
+}
+
+.works-header-uppercase {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.works-header-lowercase {
+    font-size: 25px;
+    padding: 0;
 }
 
 /* Main styling is for mobile viewing */
@@ -139,6 +165,7 @@ a {
         "works-card3 works-card3"
         "works-card4 works-card4"
         "works-card5 works-card5";
+    background-color: cadetblue;
 }
 
 .long-card {
@@ -207,6 +234,14 @@ a {
     padding: 10px 5px 0px 5px;
 }
 
+/* .resume {
+    background-color: orange;
+} */
+
+.resume-header {
+    background-color: rgb(250, 165, 37);
+}
+
 .contact {
     display: flex;
     flex-flow: wrap;
@@ -216,13 +251,13 @@ a {
     background-color: black;
     flex: 1 0 30%;
     height: fit-content;
+    font-size: bold;
 }
 
 .contact-header {
     padding: 20px 5px;
     font-size: 30px;
     color: white;
-    background-color: darksalmon;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
@@ -275,11 +310,11 @@ a {
 /* This is for smaller screen viewing */
 @media screen and (max-width: 1155px)
     {
-.overlappy-text {
-    position: static;
-    padding: 5px;
-    text-align: center;
-    align-content: center;
+        .overlappy-text {
+            position: static;
+            padding: 5px;
+            text-align: center;
+            align-content: center;
 }
 
 .hero {
@@ -305,7 +340,7 @@ a {
         .left-about {
             display: none;
             position: static;
-            background-color: darksalmon;
+            background-color: white;
         }
     }
 
