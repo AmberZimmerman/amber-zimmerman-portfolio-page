@@ -8,6 +8,10 @@ When a user clicks the words in the navigation bar, the user is brought to that 
 
 A user can click on these project photos and eventually be taken to these project pages. Currently bare html pages are the placeholders for future application projects.
 
+When the screen becomes smaller, flexbox and media queries are utilized so that images and information is displayed in the most flattering way.
+
+Included main criteria of examples design, but layout was adjusted to fit more of my personal style.
+
 
 ![screen shot desktopview of hero section on Amber Zimmermans portfolio page](/assets/images/portfolioheroscreenshot.png)
 
