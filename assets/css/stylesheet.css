@@ -315,13 +315,13 @@ a {
             padding: 5px;
             text-align: center;
             align-content: center;
-}
+        }
 
 .hero {
     display: flex;
     position: relative;
     flex-flow: column wrap;
-} 
+    } 
 
 .highlight {
     display: inline-block;
@@ -335,15 +335,27 @@ a {
             position: relative;
             flex-flow: column wrap;
         }
-
-    /* Not sure why this doesn't make it disappear */
-        .left-about {
-            display: none;
-            position: static;
-            background-color: white;
-        }
+        
     }
 
-
+@media screen and (min-width: 800)
+   {
+    .left-about {
+        display: none;
+        flex: 1 0 0;
+        background-color: red;
+    }
+    
+    .small-photo-about {
+        display: none;
+        width: auto;
+        object-fit: cover;
+        box-sizing: border-box;
+        top: 53%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        box-shadow: -30px -30px rgb(5, 51, 53);
+    }
+}
 
 
