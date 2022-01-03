@@ -140,7 +140,7 @@ a {
 .works-header {
     text-align: center;
     padding: 50px 0px 20px 0;
-    background-color: cadetblue;
+    background-color:cadetblue;
     color: white;
 }
 
@@ -317,15 +317,15 @@ a {
             align-content: center;
         }
 
-.hero {
-    display: flex;
-    position: relative;
-    flex-flow: column wrap;
-    } 
+        .hero {
+            display: flex;
+            position: relative;
+            flex-flow: column wrap;
+        } 
 
-.highlight {
-    display: inline-block;
-}
+        .highlight {
+            display: inline-block;
+        }
     }
 
 @media screen and (max-width: 900)
@@ -338,12 +338,12 @@ a {
         
     }
 
-@media screen and (min-width: 800)
+@media screen and (max-width: 800px)
    {
     .left-about {
         display: none;
-        flex: 1 0 0;
-        background-color: red;
+        flex: 1 0 45%;
+        background-color: white;
     }
     
     .small-photo-about {
