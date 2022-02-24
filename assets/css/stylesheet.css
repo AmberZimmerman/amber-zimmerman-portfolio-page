@@ -129,7 +129,7 @@ a {
 .about-bio {
     display: block;
     padding: 0 50px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* a red arrow shows up if I don't add the works class? */
@@ -325,6 +325,12 @@ a {
 
         .highlight {
             display: inline-block;
+        }
+
+        #contact {
+            display: flex;
+            position: relative;
+            flex-flow: column wrap;
         }
     }
 
