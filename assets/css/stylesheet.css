@@ -326,12 +326,6 @@ a {
         .highlight {
             display: inline-block;
         }
-
-        #contact {
-            display: flex;
-            position: relative;
-            flex-flow: column wrap;
-        }
     }
 
 @media screen and (max-width: 900)
